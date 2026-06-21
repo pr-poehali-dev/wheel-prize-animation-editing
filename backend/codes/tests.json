@@ -1,0 +1,21 @@
+{
+  "tests": [
+    {
+      "name": "Get codes list",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"codes": "array"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Create code",
+      "method": "POST",
+      "path": "/",
+      "body": {"quantity": 10},
+      "expectedStatus": 200,
+      "expectedBody": {"code": "string", "quantity": 10},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
