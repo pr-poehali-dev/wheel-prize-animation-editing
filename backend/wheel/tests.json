@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Get balance",
+      "method": "GET",
+      "path": "/?session_id=test123",
+      "expectedStatus": 200,
+      "expectedBody": {"balance": 0},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
